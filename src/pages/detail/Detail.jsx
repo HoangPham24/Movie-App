@@ -15,7 +15,7 @@ const Detail = () => {
         const getDetail = async () => {
             const response = await tmdbApi.detail(category, id, { params: {} });
             setItem(response);
-            window.scrollTop(0, 0);
+            window.scrollTo(0,0);
         };
         getDetail();
     }, [category, id]);
